@@ -1,4 +1,5 @@
 val Http4sVersion  = "0.21.3"
+val DoobieVersion = "0.8.8"
 val TapirVersion   = "0.13.2"
 
 lazy val root = (project in file("."))
@@ -18,6 +19,10 @@ lazy val root = (project in file("."))
       "dev.zio"                     %% "zio-streams"              % "1.0.0-RC18-2",
       "dev.zio"                     %% "zio-interop-cats"         % "2.0.0.0-RC12",
       "com.github.pureconfig"       %% "pureconfig"               % "0.12.3",
+
+      "org.tpolecat"                %% "doobie-core"              % DoobieVersion,
+      "org.tpolecat"                %% "doobie-h2"                % DoobieVersion,
+      "org.tpolecat"                %% "doobie-hikari"            % DoobieVersion,
 
       "com.softwaremill.sttp.tapir" %% "tapir-core"               % TapirVersion,
       "com.softwaremill.sttp.tapir" %% "tapir-http4s-server"      % TapirVersion,
