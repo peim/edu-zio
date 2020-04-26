@@ -42,6 +42,9 @@ final case class TagsRoutes[R <: TagsService]() {
     }
   }
 
+  //  def getById(id: String) = {
+  //    Endpoints.getTagById.toRoutes(id => tagsService.getById(id))
+  //  }
 //  def getById(id: String) = {
 //    Endpoints.getTagById.toRoutes(id => tagsService.getById(id))
 //  }
